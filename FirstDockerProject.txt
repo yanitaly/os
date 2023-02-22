@@ -1,0 +1,12 @@
+# Very first example for Docker Project 
+
+1. create Dockerfile, e.g.
+#syntax=docker/dockerfile:1
+FROM ubuntu:18.04
+CMD /bin/bash
+
+2. build docker image, e.g.
+docker build -t myimage2:latest .
+
+3. start container, e.g.
+docker run --rm -ti myimage2
